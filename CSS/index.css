@@ -1,0 +1,17 @@
+/*PALETA DE CORES
+#BB2020 - vermelho
+#06111C - preto 2
+#BEC7C7 - cinza claro
+#FFEB4D - amarelo
+#121317 - preto 1
+#f8f8ff - branco*/
+
+article{
+    margin: 20px 20%;
+    display: inline-block;
+    font-size: 16px;
+}
+
+article p{
+    text-align: justify;
+}

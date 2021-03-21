@@ -1,0 +1,56 @@
+/*PALETA DE CORES
+#BB2020 - vermelho
+#06111C - preto 2
+#BEC7C7 - cinza claro
+#FFEB4D - amarelo
+#121317 - preto 1
+#f8f8ff - branco*/
+
+form{
+    margin: 50px auto;
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input{
+    background-color:inherit;
+    color: #f8f8ff;
+    border: 0px;
+    border-bottom: 1px solid;
+    outline: 0px;
+    font-size: inherit;
+    margin-bottom: 20px;
+}
+
+textarea{
+    background-color:inherit;
+    color: #f8f8ff;
+    font-size: inherit;
+    outline: 0px;
+    padding: 3px;
+}
+
+#enviar{
+    background-color: #BB2020;
+    border: 1px solid #BB2020;
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin-top: 5px;
+    margin-left: 295px;
+    cursor: pointer;
+}
+
+#enviar:hover{
+    filter: brightness(1.12);
+}
+
+#enviar:active{ /*Adiciona transformação quando o botão é ativado*/
+    transform: scale(0.95); /*Diminue o botão para 95% do tamanho original*/
+    filter: brightness(0.78);
+}
+
+footer{
+    position: fixed;
+}

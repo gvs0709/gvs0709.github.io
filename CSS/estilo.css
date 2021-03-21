@@ -1,0 +1,146 @@
+/*PALETA DE CORES
+#BB2020 - vermelho
+#06111C - preto 2
+#BEC7C7 - cinza claro
+#FFEB4D - amarelo
+#121317 - preto 1
+#f8f8ff - branco*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+	background-color:#121317;
+    color: #f8f8ff;
+	margin:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #222327;
+    border: 4px solid #121317;
+    /*margin-top: 50px;*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555555;
+    /*border-radius: 10px;*/
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #BEC7C7; 
+}
+
+header{
+    height: 50px;
+	width:100%;
+    top: 0px;
+    left: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+	background-color:#BB2020;
+    font-size: 20px;
+	font-weight:bold;
+	position: -webkit-sticky;
+	position:sticky;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px #000000;
+}
+
+#logo{
+    float: left;
+    padding: 8px 0px 10px 0px;
+    margin-bottom: 0px;
+}
+
+/*#logo:hover{
+    background-color: #9B0000;
+}*/
+
+header ul{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+header li{
+	float:left;
+	margin-left:0px;
+	margin-top:0px;
+}
+
+header li a{
+    margin-top:0px;
+    padding:15px;
+    background-color: #BB2020;
+    color: #f8f8ff;
+    text-align: center;
+	display:block;
+}
+
+header li a:hover, header li a:focus{
+	background-color: #9B0000;
+    
+}
+
+#self{
+    color: #FFEB4D;
+}
+
+footer{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 40px 80px; /*o 1º valor é a margem em cima e embaixo e o 2º é a margem na esquerda e na direita*/
+    background-color: #BB2020;
+    font-size: 16px;
+    color: white;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.footer_section{
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+footer h1{
+    margin-bottom: 5px;
+}
+
+footer address{
+    font-size: 14px;
+}
+
+footer p{
+    margin-top: 35px;
+}
+
+.footer_section li{
+    margin: 0px auto;
+    display: inline-block;
+}
+
+#socials img:hover{
+    opacity: 0.8;
+}
