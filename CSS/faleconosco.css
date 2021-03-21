@@ -10,7 +10,7 @@ form{
     margin: 50px auto;
     display: inline-block;
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -38,7 +38,7 @@ textarea{
     border-radius: 5px;
     padding: 3px 5px;
     margin-top: 5px;
-    margin-left: 295px;
+    margin-left: 320px;
     cursor: pointer;
 }
 

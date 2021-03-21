@@ -9,15 +9,18 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
+    /*box-sizing: border-box;*/
+    /*font-family: 'PT Sans', sans-serif;*/
+    color: #f8f8ff;
     list-style: none;
     text-decoration: none;
 }
 
 body{
 	background-color:#121317;
-    color: #f8f8ff;
 	margin:0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'PT Sans', sans-serif;
     text-align: center;
 }
 
@@ -52,7 +55,7 @@ header{
     padding-left: 80px;
     padding-right: 80px;
 	background-color:#BB2020;
-    font-size: 20px;
+    font-size: 22px;
 	font-weight:bold;
 	position: -webkit-sticky;
 	position:sticky;
@@ -88,7 +91,6 @@ header li a{
     margin-top:0px;
     padding:15px;
     background-color: #BB2020;
-    color: #f8f8ff;
     text-align: center;
 	display:block;
 }
@@ -108,8 +110,7 @@ footer{
     bottom: 0;
     padding: 40px 80px; /*o 1º valor é a margem em cima e embaixo e o 2º é a margem na esquerda e na direita*/
     background-color: #BB2020;
-    font-size: 16px;
-    color: white;
+    font-size: 18px;
     overflow: hidden;
     display: block;
     box-sizing: border-box;
@@ -129,7 +130,7 @@ footer h1{
 }
 
 footer address{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 footer p{
