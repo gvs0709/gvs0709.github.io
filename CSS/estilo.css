@@ -146,6 +146,10 @@ footer p{
     display: inline-block;
 }
 
+#socials img{
+    height: 32px;
+}
+
 #socials img:hover{
     opacity: 0.8;
 }
