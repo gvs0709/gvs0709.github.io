@@ -92,13 +92,14 @@ footer{
     width: 100%;
     left: 0;
     bottom: 0;
-    padding: 40px 50px; /*o 1º valor é a margem em cima e embaixo e o 2º é a margem na esquerda e na direita*/
+    padding: 60px 50px; /*o 1º valor é a margem em cima e embaixo e o 2º é a margem na esquerda e na direita*/
     background-color: #BB2020;
     font-size: 18px;
     overflow: hidden;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: center;
     box-sizing: border-box;
     text-align: left;
 }
@@ -111,21 +112,8 @@ footer{
     text-decoration: underline;
 }
 
-footer h1{
-    margin-bottom: 5px;
-}
-
-footer h2{
-    margin-top: 8px;
-    margin-bottom: 10px;
-}
-
 footer address{
     font-size: 15px;
-}
-
-footer p{
-    margin-top: 35px;
 }
 
 #atualizacao{
