@@ -137,6 +137,10 @@ footer p{
     margin-top: 35px;
 }
 
+#atualizacao{
+    font-size: 11px;
+}
+
 .footer_section li{
     margin: 0px auto;
     display: inline-block;
