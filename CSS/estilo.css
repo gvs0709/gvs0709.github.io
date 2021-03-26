@@ -92,25 +92,32 @@ footer{
     width: 100%;
     left: 0;
     bottom: 0;
-    padding: 40px 80px; /*o 1º valor é a margem em cima e embaixo e o 2º é a margem na esquerda e na direita*/
+    padding: 40px 50px; /*o 1º valor é a margem em cima e embaixo e o 2º é a margem na esquerda e na direita*/
     background-color: #BB2020;
     font-size: 18px;
     overflow: hidden;
-    display: block;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     box-sizing: border-box;
     text-align: left;
 }
 
 .footer_section{
-    float: left;
-    width: 20%;
-    height: 100%;
-    margin: 0 auto;
-    display: block;
+    margin: 2px 20px;
+}
+
+#repo a:hover{
+    text-decoration: underline;
 }
 
 footer h1{
     margin-bottom: 5px;
+}
+
+footer h2{
+    margin-top: 8px;
+    margin-bottom: 10px;
 }
 
 footer address{
@@ -126,7 +133,7 @@ footer p{
 }
 
 .footer_section li{
-    margin: 0px auto;
+    margin: 0px 5px;
     display: inline-block;
 }
 
