@@ -5,6 +5,15 @@
 #FFEB4D - amarelo
 #121317 - preto 1
 #f8f8ff - branco*/
+:root{
+    --black-1: #121317;
+    --black-2: #06111C;
+    --red: #BB2020;
+    --red-hover: #9B0000;
+    --yellow: #FFEB4D;
+    --light-gray: #BEC7C7;
+    --white: #f8f8ff;
+}
 
 *{
     margin: 0;
@@ -12,13 +21,13 @@
     border: 0;
     /*box-sizing: border-box;*/
     /*font-family: 'PT Sans', sans-serif;*/
-    color: #f8f8ff;
+    color: var(--white);
     list-style: none;
     text-decoration: none;
 }
 
 body{
-	background-color:#121317;
+	background-color: var(--black-1);
 	margin:0;
     font-family: 'PT Sans', sans-serif;
     text-align: center;
@@ -38,7 +47,7 @@ header{
     left: 0px;
     padding-left: 80px;
     padding-right: 80px;
-	background-color:#BB2020;
+	background-color: var(--red);
     font-size: 22px;
 	font-weight:bold;
 	position: -webkit-sticky;
@@ -46,7 +55,7 @@ header{
     overflow: hidden;
     display: block;
     box-sizing: border-box;
-    box-shadow: 2px 2px 3px #000000;
+    box-shadow: 2px 2px 3px #000;
 }
 
 #logo{
@@ -74,18 +83,18 @@ header li{
 header li a{
     margin-top:0px;
     padding:11px;
-    background-color: #BB2020;
+    background-color: var(--red);
     text-align: center;
 	display:block;
 }
 
 header li a:hover, header li a:focus{
-	background-color: #9B0000;
+	background-color: var(--red-hover);
     
 }
 
 #self{
-    color: #FFEB4D;
+    color: var(--yellow);
 }
 
 footer{
@@ -93,7 +102,7 @@ footer{
     left: 0;
     bottom: 0;
     padding: 60px 50px; /*o 1º valor é a margem em cima e embaixo e o 2º é a margem na esquerda e na direita*/
-    background-color: #BB2020;
+    background-color: var(--red);
     font-size: 18px;
     overflow: hidden;
     display: flex;

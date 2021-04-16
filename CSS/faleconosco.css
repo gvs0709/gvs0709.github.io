@@ -5,6 +5,15 @@
 #FFEB4D - amarelo
 #121317 - preto 1
 #f8f8ff - branco*/
+:root{
+    --black-1: #121317;
+    --black-2: #06111C;
+    --red: #BB2020;
+    --red-hover: #9B0000;
+    --yellow: #FFEB4D;
+    --light-gray: #BEC7C7;
+    --white: #f8f8ff;
+}
 
 form{
     margin: 50px auto;
@@ -16,7 +25,7 @@ form{
 
 input{
     background-color:inherit;
-    color: #f8f8ff;
+    color: var(--white);
     border: 0px;
     border-bottom: 1px solid;
     outline: 0px;
@@ -26,15 +35,15 @@ input{
 
 textarea{
     background-color:inherit;
-    color: #f8f8ff;
+    color: var(--white);
     font-size: inherit;
     outline: 0px;
     padding: 3px;
 }
 
 #enviar{
-    background-color: #BB2020;
-    border: 1px solid #BB2020;
+    background-color: var(--red);
+    border: 1px solid var(--red);
     border-radius: 5px;
     padding: 3px 5px;
     margin-top: 5px;

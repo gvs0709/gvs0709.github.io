@@ -5,6 +5,15 @@
 #FFEB4D - amarelo
 #121317 - preto 1
 #f8f8ff - branco*/
+:root{
+    --black-1: #121317;
+    --black-2: #06111C;
+    --red: #BB2020;
+    --red-hover: #9B0000;
+    --yellow: #FFEB4D;
+    --light-gray: #BEC7C7;
+    --white: #f8f8ff;
+}
 
 article{
     margin: 50px 20%;
