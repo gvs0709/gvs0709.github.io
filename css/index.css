@@ -24,3 +24,11 @@ article{
 article p{
     text-align: justify;
 }
+
+article a{
+    text-decoration: underline;
+}
+
+article figcaption{
+    margin-bottom: 2em;
+}
