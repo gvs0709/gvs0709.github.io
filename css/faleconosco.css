@@ -27,7 +27,7 @@ input{
     background-color:inherit;
     color: var(--white);
     border: 0px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--light-gray);
     outline: 0px;
     font-size: inherit;
     margin-bottom: 20px;
