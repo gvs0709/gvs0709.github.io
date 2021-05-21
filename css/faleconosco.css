@@ -41,13 +41,17 @@ textarea{
     padding: 3px;
 }
 
+.msg-erro{
+    color: var(--red);
+}
+
 #enviar{
     background-color: var(--red);
     border: 1px solid var(--red);
     border-radius: 5px;
     padding: 3px 5px;
     margin-top: 5px;
-    margin-left: 320px;
+    margin-left: 17.8em;
     cursor: pointer;
 }
 
