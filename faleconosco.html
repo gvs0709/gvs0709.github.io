@@ -27,7 +27,7 @@
         </header>
 
         <main>
-            <form action="" onsubmit="return validar()" method="">
+            <form action="php/faleconosco_form.php" onsubmit="return validar(this)" method="post">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Seu 1º nome" onfocus="limpar(this)">
                 <div class="msg-erro" id="nome-erro"></div><br>
@@ -40,7 +40,7 @@
                 <input type="text" id="email" name="email" onfocus="limpar(this)">
                 <div class="msg-erro" id="email-erro"></div><br>
 
-                <textarea name="menssagem" id="menssagem" cols="33" rows="10" placeholder="Sua menssagem" onfocus="limpar(this)"></textarea>
+                <textarea id="menssagem" name="menssagem" cols="33" rows="10" placeholder="Sua menssagem" onfocus="limpar(this)"></textarea>
                 <div class="msg-erro" id="menssagem-erro"></div><br>
                 
                 <input type="submit" id="enviar">
@@ -58,7 +58,7 @@
                     Tel.: 1234-5678
                 </address>-->
 
-                <p id="atualizacao">Atualizado pela ultima vez em março de 2021</p>
+                <p id="atualizacao">Atualizado pela ultima vez em junho de 2021</p>
             </div>
             
             <div class="footer_section">

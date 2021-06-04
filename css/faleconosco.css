@@ -37,7 +37,7 @@ textarea{
     background-color:inherit;
     color: var(--white);
     font-size: inherit;
-    outline: 0px;
+    outline: 1px solid var(--white);
     padding: 3px;
 }
 
@@ -51,7 +51,7 @@ textarea{
     border-radius: 5px;
     padding: 3px 5px;
     margin-top: 5px;
-    margin-left: 17.8em;
+    margin-left: 17.9em;
     cursor: pointer;
 }
 
