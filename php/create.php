@@ -1,10 +1,5 @@
 <?php
     require 'bd_connection.php';
-
-    /*$nome = $_POST["nome"];
-    $sobrenome = $_POST["sobrenome"];
-    $email =  $_POST["email"];
-    $menssagem =  $_POST["menssagem"];*/
     
     $stmt = $pdo->prepare("INSERT INTO faleconosco (nome, sobrenome, email, menssagem) VALUES (?, ?, ?, ?);");
     $stmt->bindParam(1, $_POST["nome"]);
@@ -13,5 +8,5 @@
     $stmt->bindParam(4, $_POST["menssagem"]);
     $stmt->execute();
 
-    header('Location: ../faleconosco.html');
+    header('Location: ../crud.html');
 ?>

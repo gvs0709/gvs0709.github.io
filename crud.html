@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="Author" content="Gabriel Villares Silveira"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/crud.css">
+        <link rel="shortcut icon" type="image/png" href="images/logo_letter_g(black).png"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="js/validador.js"></script>
+        <title>Página de Administração</title>
+    </head>
+    <body>
+        <div class="section_create">
+            <h3> Criando um novo usuário (C) </h3>
+
+            <form action="php/create.php" onsubmit="return validar(this)" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" onfocus="limpar(this)">
+                <div class="msg-erro" id="nome-erro"></div><br>
+
+                <label for="sobrenome">Sobrenome:</label><br>
+                <input type="text" id="sobrenome" name="sobrenome" onfocus="limpar(this)">
+                <div class="msg-erro" id="sobrenome-erro"></div><br>
+
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" onfocus="limpar(this)">
+                <div class="msg-erro" id="email-erro"></div><br>
+
+                <textarea id="menssagem" name="menssagem" cols="33" rows="10" placeholder="Menssagem" onfocus="limpar(this)"></textarea>
+                <div class="msg-erro" id="menssagem-erro"></div><br>
+                
+                <input type="submit" id="enviar">
+            </form>
+        </div>
+
+        <div class="section_read">
+            <h3> Leitura de usuários (R) </h3>
+
+            <form action="php/read.php" method="post">
+                <label>ID: </label><br>
+                <input type="text" id="identificador_updt" name="id"><br>
+
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome_read" name="nome"><br>
+
+                <label for="sobrenome">Sobrenome:</label><br>
+                <input type="text" id="sobrenome_read" name="sobrenome"><br>
+
+                <h4>Quais campos mostrar?</h4>
+                <input type="checkbox" id="ck_box_id" name="ck_box_id">
+                <label for="ck_box_id" class="ck_box_lable">ID</label><br>
+
+                <input type="checkbox" id="ck_box_nome" name="ck_box_nome">
+                <label for="ck_box_nome" class="ck_box_lable">Nome</label><br>
+
+                <input type="checkbox" id="ck_box_sobrenome" name="ck_box_sobrenome">
+                <label for="ck_box_sobrenome" class="ck_box_lable">Sobrenome</label><br>
+
+                <input type="checkbox" id="ck_box_email" name="ck_box_email">
+                <label for="ck_box_email" class="ck_box_lable">Email</label><br>
+
+                <input type="checkbox" id="ck_box_menssagem" name="ck_box_menssagem">
+                <label for="ck_box_menssagem" class="ck_box_lable">Menssagem</label><br>
+
+                <input type="submit" id="buscar" value="Buscar Todos">
+            </form>
+        </div>
+
+        <div class="section_update">
+            <h3> Atualização de usuários (U) </h3>
+
+            <form action="php/update.php" method="post">
+                <h4>Quem atualizar?</h4><br>
+                <label>ID:</label><br>
+                <input type="text" id="identificador_updt" name="id" required><br>
+
+                <h4>O que atualizar?</h4><br>
+                <label>Nome: </label><br>
+                <input type="text" name="nome"><br>
+                <br>
+                <label>Sobrenome: </label><br>
+                <input type="text" name="sobrenome"><br>
+                <br>
+                <label>Email: </label><br>
+                <input type="text" name="email"><br>
+                <br>
+                <input type="submit" id="atualizar" value="Atualizar">
+            </form>
+        </div>
+
+        <div class="section_delete">
+            <h3> Remoção de usuários (D) </h3>
+            <form action="php/delete.php" method="post">
+                <label>ID: </label><br>
+                <input type="text" name="id" required><br>
+                <br>
+                <input type="submit" id="remover" value="Remover">
+            </form>
+        </div>
+    </body>
+</html>
